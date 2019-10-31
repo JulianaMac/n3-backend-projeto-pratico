@@ -16,4 +16,7 @@ exports.getName = (req, res) => {
   res.status(200).send(tarefas.filter(tarefa => tarefa.nomeColaborador === nome))
 }
 
-
+exports.getConcluido = (req, res) => {
+  const concluido = req.params.concluido
+  res.status(200).send(tarefas.filter(tarefa => tarefa.concluido === concluido))
+}
