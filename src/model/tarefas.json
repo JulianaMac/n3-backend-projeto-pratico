@@ -5,7 +5,7 @@
  "concluido": "false",
  "descricao": "Tarefa 1 - Agora Vai",
  "nomeColaborador": "Gabriela",
- "dataConclusao": "20/11/2019"
+ "dataConclusao": "14/02/2019"
  },
  {
  "id": 2,
@@ -21,7 +21,7 @@
  "concluido": "false",
  "descricao": "Tarefa 3 - Confia",
  "nomeColaborador": "Larissa",
- "dataConclusao": "22/12/2020"
+ "dataConclusao": "17/11/2019"
  },
  {
  "id": 4,
@@ -29,6 +29,6 @@
  "concluido": "true",
  "descricao": "Tarefa Final - Terminado",
  "nomeColaborador": "Luiza",
- "dataConclusao": "22/12/2020"
+ "dataConclusao": "22/03/2020"
  }
 ]

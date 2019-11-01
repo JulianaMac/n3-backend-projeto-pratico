@@ -17,6 +17,19 @@ exports.getName = (req, res) => {
 }
 
 exports.getConcluido = (req, res) => {
-  const concluido = req.params.concluido
-  res.status(200).send(tarefas.filter(tarefa => tarefa.concluido === concluido))
+  //req.params.concluido se refere ao nome da rota definida em tarefasRoute
+  const tarefasConcluidas = req.params.concluido
+  //tarefas.concluido se refere à chave "concluido" definido na API tarefas.json
+  res.status(200).send(tarefas.filter(tarefa => tarefa.concluido === tarefasConcluidas))
+}
+
+exports.getDataInclusao = (req, res) => {
+  
+  // const data = tarefas.dataInclusa
+  const data = tarefas.sort(function(a, b){
+    let aa = a.dataInclusao.split('/').reverse().join(),
+        bb = b.dataInclusao.split('/').reverse().join();
+    return (aa < bb ? -1 : (aa > bb ? 1 : 0));
+})
+res.status(200).send(data)
 }
